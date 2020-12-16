@@ -1,8 +1,6 @@
 const xhr = new XMLHttpRequest();
 const button = document.querySelector('.button');
 const img = document.querySelector('img');
-// const inputP = document.querySelector('.text');
-// const sectionP = document.querySelector('#section-p');
 const url = 'https://dog.ceo/api/breeds/image/random';
 
 xhr.addEventListener('loadend', () => {
@@ -18,11 +16,3 @@ button.addEventListener('click', () => {
     xhr.setRequestHeader('Accept', 'application/json');
     xhr.send();
 });
-
-// const newElem = (input) => {
-//     const newPara = document.createElement('img');
-//     sectionP.appendChild(newPara);
-//     newPara.innerText = input
-// }
-// newElem('https://dog.ceo/api/breeds/image/random');
-
